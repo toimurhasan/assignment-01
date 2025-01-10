@@ -20,6 +20,8 @@
   --blue-bg: rgba(84, 144, 245, 0.2);
   --green-bg: rgba(198, 228, 214, 1);
   --orange-bg: rgba(247, 235, 207, 1);
+
+  --border-color: rgba(14, 14, 14, 0.15);
 }
 body {
   font-family: "Fira Sans", serif;
@@ -34,11 +36,13 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: var(--text-primary);
+  margin-bottom: 1.5rem;
 }
 .sub-heading {
   font-size: 20px;
   font-weight: bold;
   color: var(--text-secondary);
+  margin-bottom: 1rem;
 }
 .description {
   font-size: 16px;
@@ -57,6 +61,21 @@ body {
   border-radius: 8px;
   padding: 1rem 2rem;
   cursor: pointer;
+}
+/* common card design */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+}
+.card-img {
+  margin-bottom: 1.5rem;
 }
 /* nav section styles */
 .nav-container {
