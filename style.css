@@ -22,6 +22,7 @@
 }
 body {
   font-family: "Fira Sans", serif;
+  background-color: var(--bg-primary);
 }
 /* common style */
 .container {
@@ -45,4 +46,28 @@ body {
 }
 .mt-80 {
   margin-top: 80px;
+}
+.btn-primary {
+  padding: 15px 30px;
+}
+/* nav section styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+.sign-in > button {
+  font-size: 18px;
+  font-weight: 600;
+  color: #006a50;
+  background: transparent;
+  border: 1px solid #006a50;
+  border-radius: 8px;
+  cursor: pointer;
 }
