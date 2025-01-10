@@ -52,17 +52,27 @@ body {
 .mt-80 {
   margin-top: 80px;
 }
+/* common button styles */
 .btn-primary {
   color: #fff;
   background: #006a50;
   font-size: 18px;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   cursor: pointer;
 }
-/* common card design */
+.btn-secondary {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+/* common card styles */
 .card-container {
   display: flex;
   justify-content: space-between;
@@ -121,4 +131,36 @@ body {
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
+}
+/* vision styles */
+.vision-container > .description {
+  margin-bottom: 2rem;
+}
+.vision .card-container .card {
+  border: none;
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vision .card-container .card:nth-child(1) {
+  background-color: var(--blue-bg);
+}
+.vision .card-container .card:nth-child(2) {
+  background-color: var(--green-bg);
+}
+.vision .card-container .card:nth-child(3) {
+  background-color: var(--orange-bg);
+}
+.vision-container .card > div {
+  margin: 0.5rem 0;
+}
+.vision .card:nth-child(1) button {
+  background: var(--blue);
+}
+.vision .card:nth-child(2) button {
+  background: var(--green);
+}
+.vision .card:nth-child(3) button {
+  background: var(--orange);
 }
