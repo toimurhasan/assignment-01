@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* color variables */
 :root {
@@ -48,7 +49,14 @@ body {
   margin-top: 80px;
 }
 .btn-primary {
-  padding: 15px 30px;
+  color: #fff;
+  background: #006a50;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  cursor: pointer;
 }
 /* nav section styles */
 .nav-container {
@@ -63,6 +71,7 @@ body {
   color: var(--text-primary);
 }
 .sign-in > button {
+  padding: 1rem 2rem;
   font-size: 18px;
   font-weight: 600;
   color: #006a50;
@@ -70,4 +79,27 @@ body {
   border: 1px solid #006a50;
   border-radius: 8px;
   cursor: pointer;
+}
+/* banner section styles */
+.banner-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background: var(--bg-secondary);
+  border-radius: 24px;
+  padding: 80px 60px;
+}
+.banner-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-grey);
+  margin-bottom: 1rem;
+}
+.banner-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
 }
