@@ -181,3 +181,37 @@ body {
 .quote .second {
   color: rgba(14, 14, 14, 0.6);
 }
+/* opinion section styles */
+.table-wrapper {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  padding: 1.5rem;
+}
+th {
+  text-align: left;
+  background-color: var(--bg-secondary);
+}
+select {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  background-color: var(--bg-secondary);
+}
+.opinion .sub-heading {
+  color: var(--text-primary);
+}
+.opinion .description,
+select {
+  color: #0e0e0e;
+  font-weight: 600;
+}
