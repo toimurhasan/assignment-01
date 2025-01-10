@@ -164,3 +164,20 @@ body {
 .vision .card:nth-child(3) button {
   background: var(--orange);
 }
+/* quote styles */
+.quote > .card {
+  background: url(assets/quote-bg.png);
+  background-repeat: no-repeat;
+  background-position: top 1.5rem left 1.5rem;
+  background-color: #fff;
+}
+.quote .first {
+  margin-top: 2rem;
+}
+.quote .sub-heading {
+  margin-bottom: 5px;
+  margin-top: 1rem;
+}
+.quote .second {
+  color: rgba(14, 14, 14, 0.6);
+}
