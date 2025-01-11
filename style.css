@@ -30,6 +30,9 @@ body {
   background-color: var(--bg-primary);
 }
 /* common style */
+.mt-80 {
+  margin-top: 80px;
+}
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -50,9 +53,6 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: var(--text-grey);
-}
-.mt-80 {
-  margin-top: 80px;
 }
 /* common button styles */
 .btn-primary {
@@ -166,7 +166,7 @@ body {
   justify-content: space-between;
   border: 1px solid transparent;
 }
-
+/* different (card + btn) background using 'nth-child pseudo class' */
 .vision .card-container .card:nth-child(1) {
   background-color: var(--blue-bg);
 }
@@ -250,6 +250,7 @@ select {
 .news .card {
   display: flex;
   margin: 1.5rem 0;
+  border: none;
 }
 .news .card-img {
   margin-bottom: 0;
@@ -346,6 +347,7 @@ select {
   border: none;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+  font-size: 1rem;
 }
 .input-group input[type="submit"] {
   padding: 1rem 2rem;
