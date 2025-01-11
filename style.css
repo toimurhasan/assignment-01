@@ -285,3 +285,48 @@ select {
 .taka-input ::placeholder {
   color: rgba(14, 14, 14, 0.3);
 }
+/* newsletter section */
+.newsletter .container {
+  background: var(--bg-secondary);
+  padding: 5rem 16rem;
+  border-radius: 1.5rem;
+}
+.newsletter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 14.5rem;
+}
+.newsletter-wrapper .heading {
+  margin: 0;
+}
+.newsletter-wrapper .description {
+  text-align: center;
+  max-width: 620px;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  gap: 0;
+}
+.input-group input[type="email"] {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.input-group input[type="submit"] {
+  padding: 1rem 2rem;
+  border: none;
+  color: #fff;
+  background: #006a50;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
