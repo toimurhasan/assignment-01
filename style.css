@@ -239,7 +239,7 @@ select {
   color: var(--text-primary);
 }
 .opinion .description,
-select {
+.opinion select {
   color: #0e0e0e;
   font-weight: 600;
 }
