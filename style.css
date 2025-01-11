@@ -23,6 +23,7 @@
   --orange-bg: rgba(247, 235, 207, 1);
 
   --border-color: rgba(14, 14, 14, 0.15);
+  --transition: 300ms ease all;
 }
 body {
   font-family: "Fira Sans", serif;
@@ -59,10 +60,16 @@ body {
   background: #006a50;
   font-size: 18px;
   font-weight: 600;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   cursor: pointer;
+  transition: var(--transition);
+}
+.btn-primary:hover {
+  color: #006a50;
+  background-color: transparent;
+  border: 1px solid #006a50;
 }
 .btn-secondary {
   color: #fff;
@@ -84,6 +91,8 @@ body {
   padding: 1.5rem;
   border: 1px solid var(--border-color);
   border-radius: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 .card-img {
   margin-bottom: 1.5rem;
@@ -109,6 +118,11 @@ body {
   border: 1px solid #006a50;
   border-radius: 8px;
   cursor: pointer;
+  transition: var(--transition);
+}
+.sign-in > button:hover {
+  background-color: #006a50;
+  color: #fff;
 }
 /* banner section styles */
 .banner-container {
@@ -133,6 +147,10 @@ body {
   color: var(--text-primary);
   margin-bottom: 1.5rem;
 }
+/* pillar styles */
+.pillars .card:hover {
+  transform: scale(1.02);
+}
 /* vision styles */
 .vision-container > .description {
   margin-bottom: 2rem;
@@ -143,7 +161,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid transparent;
 }
+
 .vision .card-container .card:nth-child(1) {
   background-color: var(--blue-bg);
 }
@@ -152,6 +172,10 @@ body {
 }
 .vision .card-container .card:nth-child(3) {
   background-color: var(--orange-bg);
+}
+.vision .card-container .card:hover {
+  background: transparent;
+  border: 1px solid var(--border-color);
 }
 .vision-container .card > div {
   margin: 0.5rem 0;
@@ -271,9 +295,11 @@ select {
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 1rem;
   cursor: pointer;
+  transition: var(--transition);
 }
 .taka:hover {
   background-color: var(--bg-secondary);
+  border: 1px solid transparent;
 }
 .taka-input input[type="text"] {
   margin: 2rem 0;
