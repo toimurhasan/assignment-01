@@ -91,7 +91,6 @@ body {
   padding: 1.5rem;
   border: 1px solid var(--border-color);
   border-radius: 1rem;
-  cursor: pointer;
   transition: var(--transition);
 }
 .card-img {
@@ -148,6 +147,10 @@ body {
   margin-bottom: 1.5rem;
 }
 /* pillar styles */
+.pillars .card {
+  max-width: 18.8rem;
+  cursor: pointer;
+}
 .pillars .card:hover {
   transform: scale(1.02);
 }
