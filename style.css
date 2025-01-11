@@ -215,3 +215,30 @@ select {
   color: #0e0e0e;
   font-weight: 600;
 }
+/* news section styles */
+.news > .container > .description {
+  margin-bottom: 2rem;
+}
+.news .card {
+  display: flex;
+  margin: 1.5rem 0;
+}
+.news .card-img {
+  margin-bottom: 0;
+}
+.news .card-img img {
+  margin: 1.5rem;
+  border-radius: 1.5rem;
+}
+.news .card-info {
+  margin: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news .card-info > .heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(14, 14, 14, 0.8);
+  margin-bottom: 0;
+}
